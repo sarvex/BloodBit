@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.sarvex.bloodbit">
+
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+    <activity
+      android:name=".main.MainActivity"
+      android:label="@string/app_name"
+      android:theme="@style/AppTheme.NoActionBar">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <meta-data
+      android:name="com.google.android.gms.car.application"
+      android:resource="@xml/automotive_app_desc"/>
+    <meta-data
+      android:name="com.facebook.sdk.ApplicationId"
+      android:value="@string/facebook_app_id"/>
+
+    <service android:name=".MyMessagingService">
+    </service>
+
+    <receiver android:name=".MessageReadReceiver">
+      <intent-filter>
+        <action android:name="com.sarvex.bloodbit.ACTION_MESSAGE_READ"/>
+      </intent-filter>
+    </receiver>
+    <receiver android:name=".MessageReplyReceiver">
+      <intent-filter>
+        <action android:name="com.sarvex.bloodbit.ACTION_MESSAGE_REPLY"/>
+      </intent-filter>
+    </receiver>
+
+    <activity android:name=".login.ProfileActivity">
+    </activity>
+    <activity android:name=".login.ForgotActivity">
+    </activity>
+    <activity android:name=".login.LoginActivity">
+    </activity>
+    <activity android:name=".login.SignupActivity">
+    </activity>
+      <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="a355546c764b59eac93b935815405095a72745ca" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

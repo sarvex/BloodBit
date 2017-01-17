@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "637496947408",
+    "firebase_url": "https://bloodbit-e4471.firebaseio.com",
+    "project_id": "bloodbit-e4471",
+    "storage_bucket": "bloodbit-e4471.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637496947408:android:7a21702109992ce1",
+        "android_client_info": {
+          "package_name": "com.sarvex.bloodbit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637496947408-i0smrns3ce4q2rash0sclp8ovg1h1oi3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5lGHuLmotUJRZwtGh0HRGMukUWn_Ka6I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
